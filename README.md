@@ -10,40 +10,6 @@ We introduce Goedel-Prover-V2, an open-source language model series that achieve
 ### State-of-the-art performance on multiple benchmarks under Pass@32.
 
 
-<style>
-  .fig-row {
-    display: flex;
-    justify-content: space-between; /* spread them out */
-    align-items: flex-start;        /* align tops */
-    gap: 1rem;                      /* space between images */
-  }
-  .fig-row img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .fig-row .panel {
-    /* override per‐panel width as needed */
-    /* e.g. .panel-1 { width:25%; } .panel-2 { width:40%; } etc. */
-  }
-  figure {
-    margin: 0;
-  }
-  figure figcaption {
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: 0.75rem;
-    color: #555;
-  }
- figure figcaption strong {
-    font-weight: bold;
-  }
-  /* Italicize the rest of the caption */
-  figure figcaption em {
-    font-style: italic;
-  }
-</style>
-
 ### Pass@32 performance on MiniF2F, PutnamBench, and FoMOBench
 
 | ![MiniF2F](assets/minif2f_bar_plot_rgb.png) | ![PutnamBench](assets/putnam_bar_plot_modified.png) | ![FoMOBench](assets/fomobench_bar_plot_modified.png) |
