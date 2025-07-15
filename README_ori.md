@@ -44,16 +44,23 @@ We introduce Goedel-Prover-V2, an open-source language model series that achieve
   }
 </style>
 
-### Pass@32 performance on MiniF2F, PutnamBench, and FoMOBench
+<figure>
+  <div class="fig-row">
+    <div class="panel panel-1" style="width:35%;">
+      <img src="https://github.com/Goedel-LM/Goedel-Prover-V2/blob/main/assets/minif2f_bar_plot_rgb.png?raw=true" alt="…">
+    </div>
+    <div class="panel panel-2" style="width:38.0%;">
+      <img src="https://github.com/Goedel-LM/Goedel-Prover-V2/blob/main/assets/putnam_bar_plot_modified.png?raw=true" alt="…">
+    </div>
+    <div class="panel panel-3" style="width:25.5%;">
+      <img src="https://github.com/Goedel-LM/Goedel-Prover-V2/blob/main/assets/fomobench_bar_plot_modified.png?raw=true" alt="…">
+    </div>
+  </div>
+  <figcaption>
+      <strong>Figure 1</strong>: <em>Pass@32 performance of Goedel-Prover-V2 and other baselines on MiniF2F, PutnamBench, and our curated FoMOBench. <strong>(Left)</strong> Our small model, Geodel-Prover-V2-8B, achieves 83.0% on MiniF2F test set under Pass@32, outperforming DeepSeek-Prover-V2-671B under same sample budget. Our flagship model Goedel-Prover-V2-32B achieves 88.0%, outperforming both previous SOTA DeepSeek-Prover-V2-671B and the concurrent work Kimina-Prover-72B under Pass@32. Additional 2 rounds of compiler-guided self-correction push the score to 90.4%. <strong>(Middle)</strong> On PutnamBench, our small model (8B) and flagship model (32B) solves 15 and 43 problems under 32 sample budget, significantly outperforming 23 problems solved by DeepSeek-Prover-V2-671B under the same sample budget. 2 rounds of self-correction push the score to xxx.  <strong>(Right)</strong> On our newly curated Olympiad benchmark <strong>FoMOBench</strong> (<strong>Fo</strong>rmal <strong>M</strong>ath <strong>O</strong>lympiad), which consists of 360 math olympiad problems from IMO, IMO shortlist, and regional mathematical Olympiad problems, Goedel-Prover-V2-32B successfully solved 60 problems out of 360 (Pass@32), surpassing DeepSeek-Prover-V2-671B which solves 50 under the same sample budget.</em>
+  </figcaption>
+</figure>
 
-| ![MiniF2F](assets/minif2f_bar_plot_rgb.png) | ![PutnamBench](assets/putnam_bar_plot_modified.png) | ![FoMOBench](assets/fomobench_bar_plot_modified.png) |
-|:--:|:--:|:--:|
-| **MiniF2F** | **PutnamBench** | **FoMOBench** |
-
-**Figure 1**: *Pass@32 performance of Goedel-Prover-V2 and other baselines on MiniF2F, PutnamBench, and our curated FoMOBench.  
-**(Left)** Our small model, Geodel-Prover-V2-8B, achieves 83.0% on MiniF2F test set under Pass@32, outperforming DeepSeek-Prover-V2-671B under same sample budget. Our flagship model Goedel-Prover-V2-32B achieves 88.0%, outperforming both previous SOTA DeepSeek-Prover-V2-671B and the concurrent work Kimina-Prover-72B under Pass@32. Additional 2 rounds of compiler-guided self-correction push the score to 90.4%.  
-**(Middle)** On PutnamBench, our small model (8B) and flagship model (32B) solves 15 and 43 problems under 32 sample budget, significantly outperforming 23 problems solved by DeepSeek-Prover-V2-671B under the same sample budget. 2 rounds of self-correction push the score to xxx.  
-**(Right)** On our newly curated Olympiad benchmark **FoMOBench** (**Fo**rmal **M**ath **O**lympiad), which consists of 360 math olympiad problems from IMO, IMO shortlist, and regional mathematical Olympiad problems, Goedel-Prover-V2-32B successfully solved 60 problems out of 360 (Pass@32), surpassing DeepSeek-Prover-V2-671B which solves 50 under the same sample budget.*
 
 ### Rank 1 on PutnamBench Leaderboard
 
